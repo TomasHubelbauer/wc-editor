@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Editor Web Component</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <textarea id="puppetTextArea"></textarea>
+    </div>
+    <div>
+      <p>State</p>
+      <dl>
+        <dt>selection start</dt>
+        <dd id="selectionStartDd"></dd>
+        <dt>selection end</dt>
+        <dd id="selectionEndDd"></dd>
+        <dt>selection direction</dt>
+        <dd id="selectionDirectionDd"></dd>
+      </dl>
+      <p>Changes</p>
+      <ol id="changeOl" reversed></ol>
+    </div>
+    <div>
+      <textarea id="mirrorTextArea" readonly></textarea>
+    </div>
+  </body>
+</html>

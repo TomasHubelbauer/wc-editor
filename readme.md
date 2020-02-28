@@ -46,6 +46,14 @@ for now.
 
 ## To-Do
 
+### Compare the performance of using the background div vs. a background SVG
+
+Either an actual SVG or using the SVG as a background image which would
+eliminate the need for a web component as only a text area `editorize` function
+could do the trick.
+
+### Flesh out the rest of the temporary experiemnt in `tmp`
+
 ### Add tests for the keyboard and mouse handling
 
 Cover all of the possible branches to make it clear what is dead code and what
