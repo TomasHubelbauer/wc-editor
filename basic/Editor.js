@@ -56,6 +56,7 @@ export default class Editor extends HTMLElement {
     textArea.style.resize = 'none';
     textArea.style.overflowX = 'hidden';
     textArea.style.overflowY = 'scroll';
+    textArea.readOnly = this.getAttribute('readonly') === '' || this.getAttribute('readonly') === 'readonly';
     return textArea;
   };
 
@@ -143,8 +144,16 @@ export default class Editor extends HTMLElement {
     this.handleTextAreaInput();
   }
 
+  get readonly() {
+    return this.textArea.readOnly;
+  }
+
+  set readonly(value) {
+    this.textArea.readOnly = value;
+  }
+
   static get observedAttributes() {
-    return ['placeholder', 'value'];
+    return ['placeholder', 'value', 'readonly'];
   }
 
   select(index, length) {
