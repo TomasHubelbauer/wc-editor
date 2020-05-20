@@ -151,3 +151,5 @@ I've already done this in https://github.com/TomasHubelbauer/js-infinite-scroll
 so use that fo inspiration.
 
 ### Address the `basic` editor to-dos
+
+### Implement the experiment ideas
